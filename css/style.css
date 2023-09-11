@@ -1,0 +1,851 @@
+/* colores::
+color: #898121 ;
+color: #CECE5A;
+color: #FFE17B ;
+color: #E7B10A ;
+color :#FD8D14 ;
+color: #C51605 ;
+
+tipografia:
+
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Kotta One', serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    font-family: "Edu SA Beginner", cursive;
+    background-color: rgb(243, 224, 199);
+
+}
+
+/*----header-------------*/
+header {
+
+    display: flex;
+    background-color: rgba(206, 206, 90, 0.74);
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-end;
+    justify-items: auto;
+    width: 100%;
+    height: 7rem;
+    margin: 8px 6px 8px 6px;
+
+}
+
+.items {
+    justify-content: flex-start;
+    align-content: flex-start;
+} 
+
+.items ul{
+    display: flex;
+    justify-items: flex-start;
+}
+
+.items li {
+
+    list-style: none;
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.items ul li a {
+    color: rgb(80, 74, 6);
+    text-decoration: none;
+    text-align: left;
+    font-family: "Edu SA Beginner", cursive;
+    font-size: 1.5rem;
+}
+
+.navbar img {
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding-right: 2rem;
+    padding-left: 5rem;
+}
+
+.buscador {
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding-right: 2rem;
+}
+
+.mi-cuenta {
+    justify-self: flex-end;
+    align-self: flex-end;
+    gap: 0.25rem;
+}
+
+/*-----fin----header---------*/
+
+/*------footer--------------*/
+footer {
+    background-color: rgb(206, 206, 90);
+    display: flex;
+    justify-content: space-between;
+    color: rgb(80, 74, 6);
+    text-decoration: none;
+    font-family: "Edu SA Beginner", cursive;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.direccion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    width: 100%;
+    height: 8rem;
+    padding: 4px;
+    margin: 4px;
+}
+
+.direccion p {
+    font-size: 1rem;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    width: 100%;
+    height: 8rem;
+    gap: 1rem;
+    padding: 4px;
+    margin: 4px;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 8rem;
+    gap: 2rem;
+    padding: 4px;
+    margin: 4px;
+}
+
+.redes ul li {
+    list-style: none;
+}
+
+.redes ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Edu SA Beginner", cursive;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #c51605;
+}
+
+/*---fin----footer-------*/
+
+/*---inicio--*/
+h1 {
+    color: rgb(80, 74, 6);
+    text-align: center;
+    font-family: "Kotta One", serif;
+    font-size: 4rem;
+    padding: 2rem 2rem;
+}
+
+h2 {
+    font-family: "Kotta One", serif;
+    color: rgb(166, 91, 10);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sectionIndexPrincipal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 31.25rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6rem;
+    background-color: rgb(240, 240, 160);
+    background-image: url("../assets/img/bebe-pies.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectionIndexPrincipal button {
+    padding: .5rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgb(240, 240, 160);
+    border: none;
+    justify-self: center;
+    align-self: center;
+}
+
+.sectionIndexPrincipal button a {
+    font-family: "Edu SA Beginner", cursive;
+    text-decoration: none;
+    color: #c51605;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.sectionIndexSecundaria {
+    display: flex;
+    justify-content: center;
+    background-color: #ffe07b96;
+    width: 100%;
+    height: 22rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectionIndexSecundaria video {
+    background-color: rgb(177, 167, 55);
+    width: 35%;
+    height: 20rem;
+    background-size: cover;
+    padding: 10px 20px;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    border-width: 10px;
+    border-style: groove;
+    border-color: rgb(166, 91, 10);
+    border-radius: 0.5rem;
+    box-shadow: #8d731fa4;
+    margin: 16px 10px 4px 16px;
+}
+
+/*-----media-query----inicio*----*/
+
+@media(max-width: 1170px) {
+    .mi-cuenta {
+        display: none;
+    }
+}
+
+
+@media(max-width: 1024px) {
+
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar img {
+        padding-right: 4rem;
+
+    }
+
+    .items ul {
+        justify-self: left;
+        align-self: flex-end;
+        text-align: left;
+
+    }
+
+    .buscador {
+        display: none;
+    }
+
+    .direccion {
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+
+}
+
+@media (max-width: 990px) {
+    .items ul li a{
+        font-size: 1rem;
+    }
+
+    .direccion {
+        width: 13.75rem;
+        height: 5rem;
+        justify-content: center;
+    }
+    
+    .direccion p {
+        font-size: .75rem;
+        justify-self: flex-end;
+        align-self: self-start;
+    }
+    
+    .redes ul {
+        align-items: start;
+    }
+
+    .redes li {
+        align-items: flex-start; 
+        font: size .75rem;
+    }
+
+    .redes ul img {
+        width: 1.875rem;
+        height: fit-content;
+        justify-content: center;
+        align-content: center;
+    } }
+@media (max-width: 768px) {
+
+    footer {
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar img {
+        padding-right: 2rem;
+    }
+
+    .items {
+        padding-left: 2rem;
+    }
+
+    .items ul {
+        justify-self: center;
+        align-self: flex-end;
+        text-align: left;
+
+    }
+
+    .buscador {
+        display: none;
+    }
+
+    .direccion {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 3rem;
+    }
+
+    .direccion {
+        width: 7.5rem;
+        height: 6.25rem;
+        justify-content: flex-end;
+    }
+
+    .direccion p {
+        font-size: .75rem;
+        justify-self: flex-end;
+        align-self: self-end;
+    }
+
+    .tarjetas {
+        display: none;
+    }
+
+    .redes ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .redes li {
+        align-items: flex-start;
+    }
+
+    .redes ul img {
+        width: 1.875rem;
+        height: fit-content;
+
+    }
+
+    .redes li {
+        font: size .75rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 1rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 480px ){
+    
+    .navbar{
+        display: flex;
+        width:100%;
+        padding-right: 6rem;
+        
+        
+    }
+    .items {
+        display:flex;
+        flex-wrap: wrap;
+        width: 7rem;
+        height: 7.5rem;
+        justify-content:flex-start;
+        align-content: flex-start;
+        align-items:flex-start;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        
+    }
+    .items ul{
+        display: flex; 
+        flex-direction: column;
+        width: auto ;
+        height:6.5rem; 
+        
+    }
+    .items li{
+        padding-right: 0px;
+        
+    }
+    .navbar img{
+        width: 8rem;
+        height:7rem;
+        padding-right: .25rem;
+        padding-left: 1rem;
+        }
+    footer{
+        width:100%;
+        height: 25rem;
+        justify-content: center;
+        align-items: center;
+    } 
+    .direccion p {
+        display: none;
+    }
+    .tarjetas img {
+        display: none;
+    }
+    
+    }
+
+@media (max-width:320px) { 
+    .navbar {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        justify-content:center;
+        }
+
+    .items {
+        justify-content: flex-start;
+        align-content: flex-start;
+        justify-items: center;
+        align-items: center;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
+    }
+    .items ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding-right: 0%;
+        padding-left: 0%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .items li {
+        text-align: center;
+    }
+    .items ul li a {
+        font-size: 10px;
+    }
+
+    .navbar img {
+        height:auto;
+        width: auto;
+        padding-right: 1rem;
+        
+    }
+}
+
+
+
+/*----------fin de inicio----------*/
+
+/*------quienes-somos-----*/
+.grid1 {
+    display: grid;
+    width: 100%;
+    height: 75rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+        "sectionQuienesPrinicpal sectionQuienesPrinicpal sectionQuienesPrinicpal sectionQuienesPrinicpal"
+        "sectionQuienesPrinicpal sectionQuienesPrinicpal sectionQuienesPrinicpal sectionQuienesPrinicpal"
+        "ubicacion ubicacion mapa mapa"
+        "logo logo mapa mapa";
+    justify-content: space-between;
+    background-color: #ffe17b;
+}
+
+.sectionQuienesPrinicpal {
+    grid-area: sectionQuienesPrinicpal;
+    background-image: url("../assets/img/bebe-peludo.jpg");
+    background-repeat: no-repeat;
+    background-position: 40%;
+    height: 37.5rem;
+    background-size: cover;
+}
+
+.sectionQuienesPrinicpal div p {
+    color: rgb(80, 74, 6);
+    margin-left: .75rem;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 37.5rem;
+}
+
+
+.ubicacion {
+
+    grid-area: ubicacion;
+    justify-self: flex-start;
+    align-self: center;
+    font-size: 1.875rem;
+    margin-left: .75rem;
+    color: rgb(80, 74, 6);
+    text-align: left;
+    font-style: italic;
+    font-weight: 25rem;
+}
+
+.logo {
+
+    grid-area: logo;
+    justify-self: flex-end;
+    align-self: self-start;
+
+}
+
+.mapa {
+
+    grid-area: mapa;
+    justify-self: center;
+    align-self: center;
+
+}
+
+/*---------fin---quienes-somos--------*/
+
+/*-----contacto-----*/
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 75rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "h1 h1 h1 h1"
+        "formulario formulario formulario formulario"
+        "h2 h2 h2 h2"
+        "otrasvias otrasvias otrasvias otrasvias";
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/img/fondos/background-sale.jpg");
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-position: 400%;
+    background-size: cover;
+
+}
+
+h1 {
+    grid-area: h1;
+    justify-self: center;
+
+}
+
+.formulario {
+    grid-area: formulario;
+    justify-self: flex-start;
+
+}
+
+h2 {
+    grid-area: h2;
+    justify-self: center;
+
+}
+
+.otrasvias {
+    grid-area: otrasvias;
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+    padding-left: .5rem;
+    gap: 1rem;
+
+}
+
+.otrasvias li {
+    list-style: none;
+    align-self: center;
+
+}
+
+.otrasvias li a {
+    font-family: "Edu SA Beginner", cursive;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #c51605;
+}
+
+.otrasvias li p {
+    font-family: "Edu SA Beginner", cursive;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: rgb(166, 91, 10);
+}
+
+form {
+    background-color: rgb(240, 240, 160);
+}
+
+form fieldset legend {
+    color: rgb(80, 74, 6);
+    text-decoration: none;
+    text-align: left;
+    font-family: "Edu SA Beginner", cursive;
+    font-size: 1.25rem;
+}
+
+form fieldset label {
+    color: rgb(80, 74, 6);
+    text-decoration: none;
+    font-family: "Edu SA Beginner", cursive;
+    font-size: 1.25rem;
+}
+
+/*-------fin---contacto------*/
+
+/*-----tienda----------------*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    border-width: 4px;
+}
+
+.cards article {
+    height: auto;
+    margin: 1.5625rem 7.25rem;
+    padding: 0.75rem 3rem;
+    border-width: 4px;
+    border-style: groove;
+    border-color: rgba(80, 74, 6, 0.808);
+    border-radius: 1rem;
+    box-shadow: #ffe17b;
+    background-color: #cfa721a4;
+}
+
+.cards img {
+    width: 15.625rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.cards p {
+    font-size: 1.25rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.cards button {
+    padding: .5rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgb(240, 240, 160);
+    border: none;
+    justify-self: center;
+    align-self: center;
+}
+
+.cards button a {
+    font-family: "Edu SA Beginner", cursive;
+    text-decoration: none;
+    color: #c51605;
+    text-align: center;
+    font-size: 1.25rem;
+
+
+}
+
+
+/*------fin---tienda----*/
+
+/*------sale----*/
+.grid-sale {
+    display: grid;
+    width: 100%;
+    height: 33rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-content: space-between;
+    background-image: url("../assets/img/fondos/background-sale.jpg");
+    background-repeat: no-repeat;
+    background-position: 40%;
+    background-size: cover;
+}
+
+.sale {
+    grid-area: sale;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.sale h1 { 
+    display:grid;
+    color: rgb(80, 74, 6);
+    text-align: center;
+    font-family: "Kotta One", serif;
+    font-size: 6rem;
+    padding: 2rem 2rem;
+}
+
+.boton1 {
+    display:grid;
+    grid-area: boton1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: space-around;
+    justify-self: center;
+    align-self: center;
+    gap: 1.25rem;
+}
+
+.boton2 {
+    display:grid;
+    grid-area: boton2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    gap: 1.25rem;
+}
+
+.boton3 {
+    display:grid; 
+    grid-area: boton3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    gap: 1.25rem;
+}
+
+.boton4 {
+    display:grid;
+    grid-area: boton4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    gap: 1.25rem;
+}
+
+button {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgba(173, 173, 46, 0.753);
+    border: chocolate
+}
+
+button a {
+    font-family: "Edu SA Beginner", cursive;
+    text-decoration: none;
+    color: #c51605;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/*-----fin----sale--*/
+
+/*-------catalogo-----html con bootstrap---responsive---uso de grid system en nav----
+flex en main y footer*/
+
+
+/*-----catalogo----*/
+.catalogo {
+    width: 100%;
+    height: 40rem;
+}
+
+.catalogo button {
+    padding: .25rem 2rem .25rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgba(173, 173, 46, 0.753);
+    border: chocolate
+}
+
+.catalogo button a {
+    font-family: "Edu SA Beginner", cursive;
+    text-decoration: none;
+    color: #c51605;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*----*/
